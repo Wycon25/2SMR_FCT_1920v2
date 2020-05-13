@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<script type="text/javascript" src="7.js"></script>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/svg+xml" href="https://wyconassets.s3-eu-west-1.amazonaws.com/extensions/wycon/images/favicon.ico" sizes="any">
+	<title>Formulario - Dirección</title>
+</head>
+<body>
+	<header>
+		<h1>Seguro de coche</h1>
+	</header>
+	<br>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="1.html">Propietario y ocupación</a></li>
+				<li><a href="2.html">Uso, aparcamiento y remolque</a></li>
+				<li><a href="3.html">Matriculación y carné</a></li>
+				<li><a href="4.html">Kilómetros a recorrer</a></li>
+				<li><a href="5.html">Procedencia</a></li>
+				<li><a href="6.html">Datos personales</a></li>
+				<li class="actual"><a href="#">Dirección</a></li>
+			</ul>
+		</nav>
+		<form action="8.html">
+			<h1>Dirección</h1>
+		<hr>
+			<label form="Código postal">Código postal</label>
+				<input id="idpostal" onkeypress="return comprobacionNumero(event);" type="text" placeholder="Código postal" minlength="4" maxlength="5" required>
+		<br><br>
+			<label form="Tipo de vía">Tipo de vía</label>
+				<select name="via">
+					<option value="Avenida">Avenida</option>
+					<option value="Avinguda">Avinguda</option>
+					<option value="Barriada">Barriada</option>
+					<option value="Barrio">Barrio</option>
+					<option value="Calle">Calle</option>
+					<option value="Camino">Camino</option>
+					<option value="Carretera">Carretera</option>
+					<option value="Carrer">Carrer</option>
+					<option value="Otros">Otros</option>
+					<option value="Pasaje">Pasaje</option>
+					<option value="Paseo">Paseo</option>
+					<option value="Plaza">Plaza</option>
+					<option value="Rambla">Rambla</option>
+					<option value="Travesia">Travesia</option>
+					<option value="Urbanizacion">Urbanizacion</option>
+				</select>
+		<br><br>
+			<label form="Vía">Vía</label>
+				<input type="text" name="Vía" placeholder="Nombre de la vía" required minlength="2" maxlength="56">
+		<br><br>
+			<label form="Número">Número</label>
+				<input onkeypress="return comprobacionNumero(event);" type="number" name="Número" placeholder="Número puerta" minlength="1" maxlength="4" required>
+		<br><br>
+			<label form="Localidad">Localidad</label>
+				<input type="text" name="Localidad" placeholder="Nombre de la localidad" minlength="4" maxlength="56" required>
+		<br><br>
+		<hr>
+			<p>
+				<a href="6.html"><button type="button"><b>Atrás</b></button></a>
+				<input class="siguiente" type="submit" value='Siguiente'></input>
+			</p>
+		</form>
+</body>
+</html>

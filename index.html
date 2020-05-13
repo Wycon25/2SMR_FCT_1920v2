@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/svg+xml" href="https://wyconassets.s3-eu-west-1.amazonaws.com/extensions/wycon/images/favicon.ico" sizes="any">
+	<title>Formulario - Marca y combustible</title>
+</head>
+<body>
+	<header>
+		<h1>Seguro de coche</h1>
+	</header>
+	<br>
+		<nav class="menu">
+			<ul>
+				<li class="actual"><a href="#">Inicio</a></li>
+				<li><a href="1.html">Propietario y ocupación</a></li>
+				<li><a href="2.html">Uso, aparcamiento y remolque</a></li>
+				<li><a href="3.html">Matriculación y carné</a></li>
+				<li><a href="4.html">Kilómetros a recorrer</a></li>
+				<li><a href="5.html">Procedencia</a></li>
+				<li><a href="6.html">Datos personales</a></li>
+				<li><a href="7.html">Dirección</a></li>
+			</ul>
+		</nav>
+		<form action="1.html" id="formulario">
+			<h1>Marca y combustible</h1>
+		<hr>
+			<label form="marca">Seleccione la marca del coche</label>
+			<div id="marca2" class="marca">
+				<ul>
+					<li>
+						<label id="AUDI" for="idAUDIRadio" ><img src="AUDI.png">AUDI</label>
+					</li>
+					<li>
+						<label id="BMW" for="idBMWRadio" ><img src="BMW.png">BMW</label>
+					</li>
+					<li>
+						<label id="CITROEN" for="idCITROENRadio" ><img src="CITROEN.png">CITROEN</label>
+					</li>
+					<li>
+						<label id="DACIA" for="idDACIARadio" ><img src="DACIA.png">DACIA</label>
+					</li>
+					<li>
+						<label id="FIAT" for="idFIATRadio" ><img src="FIAT.png">FIAT</label>
+					</li>
+					<li>
+						<label id="FORD" for="idFORDRadio" ><img src="FORD.png">FORD</label>
+					</li>
+					<li>
+						<label id="HYUNDAI" for="idHYUNDAIRadio" ><img src="HYUNDAI.png">HYUNDAI</label>
+					</li>
+					<li>
+						<label id="KIA" for="idKIARadio" ><img src="KIA.png">KIA</label>
+					</li>
+					<li>
+						<label id="MERCEDES" for="idMERCEDESRadio" ><img src="MERCEDES.png">MERCEDES</label>
+					</li>
+					<li>
+						<label id="NISSAN" for="idNISSANRadio" ><img src="NISSAN.png">NISSAN</label>
+					</li>
+					<li>
+						<label id="OPEL" for="idOPELRadio" ><img src="OPEL.png">OPEL</label>
+					</li>
+					<li>
+						<label id="PEUGEOT" for="idPEUGEOTRadio" ><img src="PEUGEOT.png">PEUGEOT</label>
+					</li>
+					<li>
+						<label id="RENAULT" for="idRENAULTRadio" ><img src="RENAULT.png">RENAULT</label>
+					</li>
+					<li>
+						<label id="SEAT" for="idSEATRadio" ><img src="SEAT.png">SEAT</label>
+					</li>
+					<li>
+						<label id="TOYOTA" for="idTOYOTARadio" ><img src="TOYOTA.png">TOYOTA</label>
+					</li>
+					<li>
+						<label id="VOLKSWAGEN" for="idVOLKSWAGENRadio" ><img src="VOLKSWAGEN.png">VOLKSWAGEN</label>
+					</li>
+				</ul>
+			</div>
+				<div class="marcainput">
+					<input name="marca" type="radio" id="idAUDIRadio" />
+					<input name="marca" type="radio" id="idBMWRadio" />
+					<input name="marca" type="radio" id="idCITROENRadio" />
+					<input name="marca" type="radio" id="idDACIARadio" />
+					<input name="marca" type="radio" id="idFIATRadio" />
+					<input name="marca" type="radio" id="idFORDRadio" />
+					<input name="marca" type="radio" id="idHYUNDAIRadio" />
+					<input name="marca" type="radio" id="idKIARadio" />
+					<input name="marca" type="radio" id="idMERCEDESRadio" />
+					<input name="marca" type="radio" id="idNISSANRadio" />
+					<input name="marca" type="radio" id="idOPELRadio" />
+					<input name="marca" type="radio" id="idPEUGEOTRadio" />
+					<input name="marca" type="radio" id="idRENAULTRadio" />
+					<input name="marca" type="radio" id="idSEATRadio" />
+					<input name="marca" type="radio" id="idTOYOTARadio" />
+					<input name="marca" type="radio" id="idVOLKSWAGENRadio" />
+				</div>
+			<label>Seleccione el tipo de combustible</label>
+				<input type="radio" name="combustible" value="Diesel"> Diesel
+				<br>
+				<input type="radio" name="combustible" value="Gasolina"> Gasolina
+				<br>
+				<input type="radio" name="combustible" value="Otros"> Otros (Híbridos, Eléctricos, etc...)
+			<br><br>
+			<hr>
+			<p >
+				<input class="siguiente" type="submit" value='Siguiente'></input>
+			</p>
+		</form>
+</body>
+</html>

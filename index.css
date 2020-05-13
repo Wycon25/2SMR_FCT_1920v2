@@ -1,0 +1,135 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url(fondo2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+header h1{
+	font-size: 50px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+/*Este es un menú que esta pensado para facilitar la navegación, pero no es
+necesario para el usuario que usará el formulario.*/
+nav{
+	display: none;
+}
+.menu ul{
+	list-style: none;
+	text-align: center;
+}
+.menu li{
+	background-color: lightblue;
+	padding: 5px;
+	margin: 2px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.menu li:hover{
+	background-color: grey;
+}
+.actual{
+	box-shadow: inset 0 0 100px grey;
+}
+.menu a{
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+/*Aquí empieza el contenedor del formulario.*/
+form{
+	background-image: url(fondo.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 1% 3%;
+	margin: 1% 5%;
+	background-color: #81BEF7;
+	border: 1px solid black;
+	border-radius: 25px;
+	box-shadow: inset 0 0 25px black;
+}
+form h1{
+	font-weight: bold;
+	text-align: left;
+	font-size: 40px;
+	margin: 20px;
+}
+hr {
+  border: 1px solid black;
+  width: 98%;
+}
+form label{
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
+form input{
+	margin-left: 1%;
+	display: inline-block;
+	position: relative;
+}
+form button{
+	display: inline-block;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 2%;
+}
+form button:hover {
+	background-color: lightgrey;
+}
+form button:active {
+	background-color: grey;
+}
+p{
+	text-align: center;
+}
+.marca {
+	text-align: center;
+	padding: 1% 3%;
+}
+.marca li{
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	padding: 3px;
+	margin: 2px;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+.marca li:hover {
+	background-color: lightgrey;
+}
+.marca img{
+	display: block;
+	margin: auto;
+	padding-bottom: 3px;
+}
+.marcainput{
+	display: none;
+}
+/*Aquí empieza el botón siguiente.*/
+.siguiente{
+	display: inline-block;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 2%;
+	font-weight: bold;
+}
+.siguiente:hover {
+	background-color: lightgrey;
+}
+.siguiente:active {
+	background-color: grey;
+}
